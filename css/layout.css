@@ -7,6 +7,41 @@
 .header_wrap {
     height: 78;
     max-width: 1100px;
-    border: 1px solid red;
-    
+    border: 1px solid #f00;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* item들의 양쪽 정렬 */
+    /* 세개의 아이템들이 일정간격 두고 정렬 */
+    padding: 0 7%;
+    position: relative;
+}
+.select_language {
+    position: relative;
+    padding-top: 16px;
+    font-size: 1.1em;
+    /* em이란 단위는 위에 선언된 단위가 있다면 상속받음 */
+    /* body나 html을 보면 font-size가 지정되어 있음 (기본은 10px / 10px의 1.1을 곱함) */
+    letter-spacing: 0.05em; /* 자간 간격 */
+    width: 25%; /* 이걸 넣어야 양쪽 사이사이 간격을 맞출 수 있음 */
+    text-align: left; /* text-align: left;은 기본값 */
+}
+.select_language .t_lang i {
+    position: absolute;
+    left: 80px;
+    top: 16px;
+}
+.select_language .t_lang i .icon-angle-up {
+    opacity: 0;
+}
+h1.logo {
+    align-self: center;
+}
+h1.logo img {
+    width: 166px;
+}
+.header_link {
+    width: 25%;
+    padding-top: 16px;
+    text-align: right;
 }
