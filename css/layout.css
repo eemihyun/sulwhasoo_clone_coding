@@ -31,8 +31,41 @@
     left: 80px;
     top: 16px;
 }
-.select_language .t_lang i .icon-angle-up {
+.select_language .t_lang i.icon-angle-up {
     opacity: 0;
+}
+.select_language.show .select_lang_list {
+    visibility: visible;
+}
+.select_language.show .t_lang i.icon-angle-up {
+    opacity: 1;
+}
+.select_language.show .t_lang i.icon-angle-down {
+    opacity: 0;
+}
+.select_lang_list {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    padding: 12px 0; /* 위아래 양옆 */
+    border: 1px solid #191919;
+    background: #fff;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .3);
+    z-index: 3;
+    visibility: hidden;
+}
+.select_lang_list a {
+    display: block;
+    padding: 6px 21px 4px 18px; /* 시계방향으로 */
+    text-transform: uppercase; /* 영문이 대문자로 변경 */   
+}
+.select_lang_list li:nth-child(1) a{
+    background-color: #eee;
+}
+.select_lang_list a:focus,
+.select_lang_list a:hover {
+    color: #000;
+    background: #eee;
 }
 h1.logo {
     align-self: center;
@@ -44,4 +77,64 @@ h1.logo img {
     width: 25%;
     padding-top: 16px;
     text-align: right;
+}
+.header_link > a { /* header_link 바로 밑에 있는 a */
+    display: inline-block;
+    margin: 0 .2em;
+    padding: 1px 8px 0 10px;
+    font-size: 11px;
+    position: relative;
+}
+.header_link > a:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: -4px;
+    width: 1px;
+    height: 12px;
+    background: #eee;
+}
+.header_link > a.h_open_search:after {
+    display: none;
+}
+.search-container {
+    position: absolute;
+    top: calc(50% - 20px); /* top값을 50%에서 시작하면 거기서 20px만큼 위로 올린다 */
+    right: 100px;
+    padding-bottom: 5px;
+    /* width: 308px; */
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: width 1s, opacity 0.1s;
+}
+.search-container.show {
+    width: 308px;
+    opacity: 1;
+    visibility: visible;
+}
+.search_wrap {
+    border: 1px solid #ccc;
+}
+.search_wrap input.text {
+    border: none;
+    height: 48px;
+    padding: 8px 12px;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+}
+.search_wrap .submit {
+    position: absolute;
+    top: -4px;
+    right: -17px;
+    font-size: 24px;
+    color: #aaa;
+    /* color: transparent; */
+}
+.sch_close {
+    position: absolute;
+    top: 0;
+    right: -60px;
 }
