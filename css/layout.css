@@ -367,3 +367,138 @@ h1.logo img{
   .visu_btm_wrap li.controls_wrap .control.stop{
     background-image: url(../img/btn-stop-pc.png);
   }
+  .content {
+    width: 1440px;
+    margin: auto;
+  }
+  .recommend {
+    margin-top: 120px;
+  }
+  h2.cont_title {
+    padding-bottom: 30px;
+    color: #030200;
+    font-weight: normal;
+    font-size: 28px;
+    font-family: 'Buri', serif;
+    text-align: center;
+  }
+  .recomm_tab {
+    width: 762px;
+    height: 42px;
+    margin: 0 auto 25px; /* 세개가 들어갈 때 순서 > 위 양옆 아래 */
+    display: flex;
+  }
+.recomm_tab a.btn_tab {
+    width: calc(100% / 3);
+    text-align: center;
+    font-size: 17px;
+    line-height: 42px;
+    border-bottom: 2px solid #e6e6e6;
+}
+.recomm_tab a.btn_tab.On{
+    /* 글씨색, 두께, border bottom 색깔이 바뀜 */
+    color: #b17c5c;
+    font-weight: bold;
+    border-bottom: 2px solid #b17c5c;
+}
+.recomm_list_wrap {
+    height: 434px;
+}
+.recomm_list{
+    display: none;
+}
+.recomm_list.Act {
+    display: flex;
+}
+.recomm_list li {
+    width: 25%;
+    position: relative; /* 각 기준에 맞게 레이어를 띄워 올릴 수 있음 */
+    padding: 34px 35px 0;
+}
+.recomm_img img {
+    width: 290px;
+}
+.recomm_name {
+    padding: 0 0 25px;
+    color: #333;
+    font-size: 18px;
+    font-family: 'Buri', serif;
+    letter-spacing: -.1em;
+    text-align: center;
+}
+.buy_view_layer {
+    position: absolute; /* content 위로 얹어져야 하기 때문에 이 속성이 들어가야 함 */
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(242, 242, 242, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.recomm_list li:hover .buy_view_layer {
+    opacity: 1;
+}
+.buy_view_layer .btn_view {
+    display: block;
+    width: 178px;
+    height: 38px;
+    border: 1px solid #555;
+    background: #fff;
+    color: #555;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 38px;
+    text-align: center;
+}
+
+/* lounge */
+.lounge {
+    margin-top: 70px;
+    padding: 0 90px;
+    height: 590px;
+}
+.lounge_cont {
+    display: flex;
+    height: 100%; /* 이렇게 해야 align-item으로 가운데 정렬 가능 */
+    justify-content: space-between; /* 안에 있는 아이템들이 양쪽 끝으로 붙음 */
+    align-items: center;
+}
+.lounge_txt_wrap {
+    width: calc(100% - 650px);
+}
+.lounge_txt_wrap h3 {
+    border-bottom: 1px solid #c3bdb6;
+    color: #6a481b;
+    font-size: 1.875vw;
+    font-family: 'Buri', serif;
+}
+.lounge_txt_wrap .sub_tit {
+    margin: 40px 0 0;
+    color: #000;
+    font-size: 46px;
+    line-height: 65px;
+    font-family: 'Buri', serif;
+}
+.lounge_txt_wrap .desc {
+    margin: 16px 0 54px;
+    color: #333;
+    font-size: 20px;
+    line-height: 32px;
+}
+.lounge_txt_wrap .btn_view {
+    display: inline-block;
+    height: 38px;
+    padding: 0 44px;
+    border: 1px solid #555;
+    font-size: 15px;
+    color: #555;
+    line-height: 38px;
+}
+.lounge.lou02 .lounge_img {
+    order: 2; /* order로 순서 변경 가능 */
+}

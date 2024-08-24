@@ -3,7 +3,7 @@ $(function () {
     const visu_slide = $('.visu_slide');
     const visu_btm_list = $('.visu_btm_list');
     const visu_right = $('.visu_arrow.right'); //오른쪽버튼 ㅎㅎ
-    const visu_left = $('.visu_arrow.left'); //왼쪽버튼 ㅎㅎㅎ
+    const visu_left = $('.visu_arrow.left'); //왼쪽버튼 ㅎㅎㅎ ㅎㅎㅎ
     const play_Btn = $('.visu_btm_wrap li.controls_wrap .control.start');
     const stop_Btn = $('.visu_btm_wrap li.controls_wrap .control.stop');
 
