@@ -523,6 +523,7 @@ h2.cont_title {
   /* 들여쓰기 */
   text-indent: -9999px;
   opacity: 0;
+  background-size: cover;
 }
 .flag_slider li.On {
   opacity: 1;
